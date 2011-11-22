@@ -1,98 +1,96 @@
 <!doctype html>
 <html>
-	<head>
-		<!-- Character Set Meta -->
-		<meta charset="utf-8" />
-		<!-- Description Meta -->
-		<meta name="description" content="Add A Song" />
-		<!-- Keywords Meta -->
-		<meta name="keywords" content="Music, Songs, Albums" />
-		<!-- Robot Meta -->
-		<meta name="robots" content="noindex,nofollow" />
-		<!-- Allows content to be sized correctly on iPhone display-->
-		<!-- Viewport tells browser to allow user to scale content and how wide it should assume the content will be displayed (i.e. full 960px or width of device -->
-		<meta name="viewport" content="user-scalable=no, width=device-width" />
-		<!-- What about the Android?? This allows developers to specify which screen resolution the page has been developed for -->
-		<meta name="viewport" content="target-densitydpi=device-dpi" />
-		<!-- Page Title -->
-		<title>Favorite Song List</title>
+    <head>
+        <!-- Character Set Meta -->
+        <meta charset="utf-8" />
+        <!-- Description Meta -->
+        <meta name="description" content="Add A Song" />
+        <!-- Keywords Meta -->
+        <meta name="keywords" content="Music, Songs, Albums" />
+        <!-- Robot Meta -->
+        <meta name="robots" content="noindex,nofollow" />
+        <!-- Allows content to be sized correctly on iPhone display-->
+        <!-- Viewport tells browser to allow user to scale content and how wide it should assume the content will be displayed (i.e. full 960px or width of device -->
+        <meta name="viewport" content="user-scalable=no, width=device-width" />
+        <!-- What about the Android?? This allows developers to specify which screen resolution the page has been developed for -->
+        <meta name="viewport" content="target-densitydpi=device-dpi" />
+        <!-- Page Title -->
+    
+    <title>Favorite Song List</title>
 		
-	</head>
-	<body>
-		<!-- Top Header of Page-Title -->
-		<header>
-			<h1>Favorite Song List</h1>
-		</header>
-		<!-- Main Navigation -->
-		<nav>
-		</nav>
-		<!-- Section Divides Different area of website -->
-		<section id="Select A Genre">
-		<!-- Form Starts Here -->	
-		<form action="URL" method="post">
-			<!-- Fieldset groups elements together -->
-			<fieldset>
-				<!-- Legend identifies grouping -->
-				<legend>Genre:</legend>
-				<!-- Select creates a drop-down list -->
-				<select>
-					<option value="Select Genre">Select Genre</option>
-					<option value="Rock">Rock</option>
-					<option value="Hip Hop">Hip Hop</option>
-					<option value="R&B">R&B</option>
-					<option value="Classical">Classical</option>
-					<option value="Jazz">Jazz</option>
-					<option value="Oldies">Oldies</option>
-					<option value="Alternative">Alternative</option>
-					<option value="Gospel">Gospel</option>
-				</select>
-			</fieldset>
-			<fieldset>
-				<legend>Song Info:</legend>
-				<label for="Artist">Artist:</label>
-				<input type="text" name="Artist" />
-				<br />
-				<br />
-				<label for="Song">Song:</label>
-				<input type="text" name="Specific Song" />
-				<br />
-				<br />
-				<select>
-					<option value="Select Format">Select Format</option>
-					<option value="MP3">MP3</option>
-					<option value="iTunes">iTunes</option>
-					<option value="CD">CD</option>
-				</select>
-			</fieldset>
-			<fieldset>
-				<legend>Additional Information</legend>
-				<label for="Favorite Artist?">Favorite Artist?</label>
-				<input type="checkbox" value="Mark Favorite" />
-				<br />
-				<br />
-				<label for="Star Rating">Star Rating:</label>
-				<input type="range" id="sliderBar min="0" max="10" step="1" value="0" />
-				<br />
-				<br />
-				<label for="Date Saved:">Date Saved:</label>
-				<input type="date" value="Input Date" />
-				<br />
-				<br />
-				<label for="Notes">Notes:</label>
-				<textarea rows="4" cols="50">
-				</textarea>
-			</fieldset>
-			<br />
-			<!-- Submit Button -->
-			<input type="submit" value="Submit" />
-			<br />
-			<br />
-			<!-- Clear Form Link -->
-			<a href="form.html">Clear</a>
-		</form>
-		</section>
-	
-		<!-- Page content lives here. -->
-	
-	</body>
+    </head>
+    <body>
+        <!-- Top Header of Page-Title -->
+        <header>
+                <h1>Add Song</h1>
+        </header>
+        <!-- Section Divides Different area of website -->
+        <section id="Select A Genre">
+        <!-- Form Starts Here -->	
+        <form action="URL" method="post">
+        <!-- Fieldset groups elements together -->
+        <fieldset>
+            <!-- Legend identifies grouping -->
+            <legend>Genre:</legend>
+            <!-- Select creates a drop-down list -->
+            <select>
+                <option value="Select Genre">Select Genre</option>
+                <option value="Rock">Rock</option>
+                <option value="Hip Hop">Hip Hop</option>
+                <option value="R&B">R&B</option>
+                <option value="Classical">Classical</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Oldies">Oldies</option>
+                <option value="Alternative">Alternative</option>
+                <option value="Gospel">Gospel</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Song Info:</legend>
+            <label for="Artist">Artist:</label>
+            <input type="text" name="Artist" />
+            <br />
+            <br />
+            <label for="Song">Song:</label>
+            <input type="text" name="Specific Song" />
+            <br />
+            <br />
+            <select>
+                <option value="Select Format">Select Format</option>
+                <option value="MP3">MP3</option>
+                <option value="iTunes">iTunes</option>
+                <option value="CD">CD</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="Favorite Artist?">Favorite Artist?</label>
+            <input type="checkbox" value="Mark Favorite" />
+            <br />
+            <br />
+            <label for="Star Rating">Star Rating:</label>
+            <input type="range" id="sliderBar min="0" max="10" step="1" value="0" />
+            <br />
+            <br />
+            <label for="Date Saved:">Date Saved:</label>
+            <input type="date" value="Input Date" />
+            <br />
+            <br />
+            <label for="Notes">Notes:</label>
+            <textarea rows="4" cols="50">
+            </textarea>
+        </fieldset>
+            <br />
+            <!-- Submit Button -->
+            <input type="submit" value="Submit" />
+            <br />
+            <br />
+            <!-- Clear Form Link -->
+            <a href="additem.html">Clear</a> 
+        </form>
+        </section>
+
+<!-- Page content lives here. -->
+
+    </body>
 </html>
