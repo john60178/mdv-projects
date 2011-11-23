@@ -49,38 +49,27 @@
         </fieldset>
         <fieldset>
             <legend>Song Info:</legend>
-            <label for="Artist">Artist:</label>
-            <input type="text" name="Artist" />
-            <br />
-            <br />
-            <label for="Song">Song:</label>
-            <input type="text" name="Specific Song" />
-            <br />
-            <br />
-            <select>
-                <option value="Select Format">Select Format</option>
-                <option value="MP3">MP3</option>
-                <option value="iTunes">iTunes</option>
-                <option value="CD">CD</option>
-            </select>
+                <ul>
+                    <li><label for="Artist">Artist:</label><input type="text" id="artist" placeholder="Lil Wayne" /></li>
+                    <li><label for="Song">Song:</label><input type="text" id="song" placeholder="Bedrock" /></li>
+                    <li>
+                        <select>
+                            <option value="Select Format">Select Format</option>
+                            <option value="MP3">MP3</option>
+                            <option value="iTunes">iTunes</option>
+                            <option value="CD">CD</option>
+                        </select>
+                    </li>
+                </ul>
         </fieldset>
         <fieldset>
             <legend>Additional Information</legend>
-            <label for="Favorite Artist?">Favorite Artist?</label>
-            <input type="checkbox" value="Mark Favorite" />
-            <br />
-            <br />
-            <label for="Star Rating">Star Rating:</label>
-            <input type="range" id="sliderBar min="0" max="10" step="1" value="0" />
-            <br />
-            <br />
-            <label for="Date Saved:">Date Saved:</label>
-            <input type="date" value="Input Date" />
-            <br />
-            <br />
-            <label for="Notes">Notes:</label>
-            <textarea rows="4" cols="50">
-            </textarea>
+                <ul>
+                    <li><label for="Favorite Artist?">Favorite Artist?</label><input type="checkbox" value="Mark Favorite" id=favartist /></li>
+                    <li><label for="Star Rating">Star Rating:</label><input type="range" id="sliderbar min="0" max="10" step="1" value="0" /></li>
+                    <li><label for="Date Saved:">Date Saved:</label><input type="date" value="Input Date" id=datesaved /></li>
+                    <li><label for="Notes">Notes:</label><br /><textarea rows="4" cols="50" id=notes placeholder="Any additional information can be placed here."></textarea></li>
+                </ul>
         </fieldset>
             <br />
             <!-- Submit Button -->
