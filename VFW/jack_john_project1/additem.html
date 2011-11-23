@@ -14,20 +14,22 @@
         <meta name="viewport" content="user-scalable=no, width=device-width" />
         <!-- What about the Android?? This allows developers to specify which screen resolution the page has been developed for -->
         <meta name="viewport" content="target-densitydpi=device-dpi" />
-        <!-- Page Title -->
-    
+        <!-- To Display on older browsers that don't support the viewport attribute. HandheldFriendly is interpreted by browsers and spiders as mobile markup and directs the browser to display without scaling. -->
+        <meta name="HandheldFriendly" content="True">
+        <!-- MobileOptimized forces the browser to display in single-column layouts. Mobile browsers and spiders use meta tag to identify mobile-optimized html. -->
+        <meta name="MobileOptimized" content="320" />
+    <!-- Page Title -->
     <title>Favorite Song List</title>
 		
     </head>
     <body>
         <!-- Top Header of Page-Title -->
-        <header>
-                <h1>Add Song</h1>
-        </header>
+        <h1>Add A Song</h1>
+        
         <!-- Section Divides Different area of website -->
         <section id="Select A Genre">
         <!-- Form Starts Here -->	
-        <form action="URL" method="post">
+        <form action="#" method="post">
         <!-- Fieldset groups elements together -->
         <fieldset>
             <!-- Legend identifies grouping -->
@@ -86,11 +88,12 @@
             <br />
             <br />
             <!-- Clear Form Link -->
-            <a href="additem.html">Clear</a> 
+            <a href="additem.html">Clear</a>
+            <a href="#">Display Data</a>
         </form>
         </section>
 
-<!-- Page content lives here. -->
+            <!-- Page content lives here. -->
 
     </body>
 </html>
