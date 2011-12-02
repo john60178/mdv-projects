@@ -1,10 +1,95 @@
+/*
+  
+title: Project2 additem.html Styles
+by: John Jack
+date: November 30, 2011 
+
+*/
+
 h1 {
-    font-family: Georgia;
+    font-family:"Georgia", serif;
     font-size: 32px;
-    color: #9999FF;
+    color: #052F6D;
+    margin: 20px;
+    font-style: italic;
+    border: 2px solid black;
+    text-align: center;
+    background-color: #F0F8FF;
+    padding: 20px;
 }
 
+body {
+    background-color: #F7BFB5;
+}
 
-/* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #00A3EF));
+p {
+    font-family:"Georgia", serif;
+    font-size: 16px;
+    color: #9400D3;
+    margin: 20px;
+}
 
+h2 {
+    font-family:"Arial", Helvetica, sans-serif;
+    font-size: 22px;
+    color: #052F6D;
+    margin: 20px;
+    border: 2px solid black;
+    width: 22%;
+    text-align: center;
+    background-color: #F0F8FF;
+}
+
+a {
+    color: #0000CD;
+    font-family: "Georgia", serif;
+    font-style: bold;
+    margin: 20px;
+}
+
+select {
+    background-color: #F0F8FF;
+}
+
+label {
+    font-family:"Arial", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000080;
+}
+
+.category {
+    font-family:"Arial", Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #052F6D;
+}
+
+#favoriteArtist {
+    margin-bottom: 20px;
+}
+
+#dateSaved {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+list-style-type: none;
+}
+
+#genres {
+    font-family:"Arial", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000080;
+}
+
+#submit {
+    margin-left: 20px;
+}
+
+#format {
+   font-family:"Arial", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000080; 
+}
