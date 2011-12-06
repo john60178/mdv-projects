@@ -15,12 +15,12 @@ window.addEventListener("DOMContentLoaded", function() {
     // Create select field element and populate with options.
     function makeCats() {
         var formTag = document.getElementsByTagName("form"),   //FormTag is an array of all the form tags.
-            selectLi = $('genres'),
+            selectLi = $('list'),
             makeSelect = document.createElement('select');
             makeSelect.setAttribute("id", "genres");
-        for(var i=0, j=genre.length; i<j; i++) {
+        for(var i=0, j=genreList.length; i<j; i++) {
            var makeOption = document.createElement('option');
-           var optText = genre[i];
+           var optText = genreList[i];
            makeOption.setAttribute("value", optText);
            makeOption.innerHTML = optText;
            makeSelect.appendChild(makeOption);
@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", function() {
        if($('favoriteArtist').checked) {
             favoirteArtistValue = $('favoriteArtist').value;
        } else {
-            favoirteArtistValue = "No"
+            favoirteArtistValue = "No";
        }
     }
     
@@ -43,19 +43,20 @@ window.addEventListener("DOMContentLoaded", function() {
                 $('contactForm').style.display = "none";
                 $('clear').style.display = "inline";
                 $('displayLink').style.display = "none";
-                $('addNew').style.display = "inline";
+                //$('addNew').style.display = "inline";
                 break;
             case "off":
                 $('contactForm').style.display = "block";
                 $('clear').style.display = "inline";
                 $('displayLink').style.display = "inline";
-                $('addNew').style.display = "none";
+                //$('addNew').style.display = "none";
                 $('items').style.display = "none";
                 break;
             default:
-                return false;
         }
+        return false;
     }
+    
     function storeData() {
         var id                     = Math.floor(Math.random()*100000001);
         // Gather up all our form field values and store in an object.
@@ -105,19 +106,19 @@ window.addEventListener("DOMContentLoaded", function() {
     
     function clearLocal() {
         if(localStorage.length === 0) {
-            alert("There is no data to clear.")
+            alert("There is no data to clear.");
         } else {
             localStorage.clear();
             alert("All contents have been deleted!");
             window.location.reload();
-            return false;
         }
+        return false;
     }
     
     // Variable defaults
-    var genre = ["Select Genre", "Rock", "Hip Hop", "R&B", "Classical", "Jazz", "Oldies", "Alternative", "Gospel"],
+    var genreList = ["Select Genre", "Rock", "Hip Hop", "R&B", "Classical", "Jazz", "Oldies", "Alternative", "Gospel"],
         //format = ["Select Format", "MP3", "iTunes", "CD"],
-        favoriteArtistValue = "No";
+        favoriteArtistValue = "Yes";
         
     makeCats();
     

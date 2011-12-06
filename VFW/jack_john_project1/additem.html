@@ -38,8 +38,8 @@
         <fieldset>
             <!-- Legend identifies grouping -->
             <legend class="category">Genre:</legend>
-                <ul id="dynamic">
-                    <li class="genre" id="genres"><label for="genres">Pick a Genre:</label></li>
+                <ul>
+                    <li id="list">Pick a Genre:</li>
                 </ul>
             <!-- Select creates a drop-down list -->
             <!--<select class="genre" id="genre">
@@ -76,17 +76,17 @@
                 <ul>
                     <li><label for="favoriteArtist">Favorite Artist?</label><input type="checkbox" value="Yes" id="favoriteArtist" /></li>
                     <li><label for="starRating">Star Rating:</label><input type="range" id="starRating" min="0" max="10" step="1" value="0" /></li>
-                    <li><label for="dateSaved:">Date Saved:</label><input type="date" value="Input Date" id=dateSaved /></li>
+                    <li><label for="dateSaved:">Date Saved:</label><input type="date" value="Input Date" id="dateSaved" /></li>
                     <li><label for="notes">Notes:</label><br /><textarea rows="4" cols="50" id="notes" placeholder="Any additional information can be placed here."></textarea></li>
                 </ul>
         </fieldset>
             <br />
             <!-- Submit Button -->
-            <input type="submit" value="Submit" id="submit" onclick= "storeData();" />
+            <input type="submit" value="Submit" id="submit" />
             <br />
             <br />
             <!-- Clear Form Link -->
-            <a href="#" id="clear" onclick="clearLocal();">Clear Storage</a>
+            <a href="#" id="clear">Clear Storage</a>
             <br />
             <br />
             <a href="#" id="displayLink">Display Data</a>
