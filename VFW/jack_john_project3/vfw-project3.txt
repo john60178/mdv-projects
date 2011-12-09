@@ -1,0 +1,6 @@
+GitHub Master Branch:
+https://github.com/john60178/mdv-projects
+
+GitHub gh-pages Branch:
+http://john60178.github.com/mdv-projects/VFW/jack_john_project3/index.html
+
