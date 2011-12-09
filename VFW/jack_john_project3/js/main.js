@@ -263,3 +263,6 @@ window.addEventListener("DOMContentLoaded", function() {
     save.addEventListener("click", validate);
 
 });
+
+
+// Rick was here.
