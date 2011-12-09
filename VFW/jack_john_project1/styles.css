@@ -1,9 +1,8 @@
 /*
-  
-title: Project2 additem.html Styles
-by: John Jack
-date: November 30, 2011 
-
+John Jack 
+Visual Frameworks Term 1111
+Project3 styles.css
+December 8, 2011 
 */
 
 h1 {
@@ -75,7 +74,7 @@ label {
 }
 
 ul {
-list-style-type: none;
+    list-style-type: none;
 }
 
 #genres {
@@ -89,7 +88,21 @@ list-style-type: none;
 }
 
 #format {
-   font-family:"Arial", Helvetica, sans-serif;
+    font-family:"Arial", Helvetica, sans-serif;
     font-size: 16px;
     color: #000080; 
+}
+
+#item {
+    background-color: #736AFF;
+    border: 2px double gold;
+    margin: 20px;
+    padding: 10px;
+}
+
+div>ul>li {
+    background-color: #736AFF;
+    border: 2px double gold;
+    margin: 20px;
+    padding: 10px;
 }
