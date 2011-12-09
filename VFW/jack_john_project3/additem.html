@@ -1,0 +1,101 @@
+<!doctype html>
+    <!-- John Jack -->
+    <!--Visual Frameworks Term 1111 -->
+    <!--Project3  additem.html page -->
+    <!--December 8, 2011 -->
+<html>
+    <head>
+        <!-- Character Set Meta -->
+        <meta charset="utf-8" />
+        <!-- Description Meta -->
+        <meta name="description" content="Add A Song" />
+        <!-- Keywords Meta -->
+        <meta name="keywords" content="Music, Songs, Albums" />
+        <!-- Robot Meta -->
+        <meta name="robots" content="noindex,nofollow" />
+        <!-- Allows content to be sized correctly on iPhone display-->
+        <!-- Viewport tells browser to allow user to scale content and how wide it should
+        assume the content will be displayed (i.e. full 960px or width of device -->
+        <meta name="viewport" content="user-scalable=no, width=device-width" />
+        <!-- What about the Android?? This allows developers to specify which screen resolution
+        the page has been developed for -->
+        <meta name="viewport" content="target-densitydpi=device-dpi" />
+        <!-- To Display on older browsers that don't support the viewport attribute.
+        HandheldFriendly is interpreted by browsers and spiders as mobile markup and directs
+        the browser to display without scaling. -->
+        <meta name="HandheldFriendly" content="True">
+        <!-- MobileOptimized forces the browser to display in single-column layouts. Mobile
+        browsers and spiders use meta tag to identify mobile-optimized html. -->
+        <meta name="MobileOptimized" content="320" />
+        <!-- Page Title -->
+        <title>Favorite Song List</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Top Header of Page-Title -->
+        <h1>Add A Song</h1>
+        <div id="item">
+            <nav>
+                <a href="#" id="clear">Clear Storage</a>
+                <a href="#" id="displayLink">Display Data</a>
+                <a href="additem.html" id="addNew" style="display:none;">Add New Song</a>
+            </nav>
+        </div>
+        <!-- Form Starts Here -->	
+        <form action="#" method="post" id="contactForm">
+        <!-- Fieldset groups elements together -->
+        <fieldset>
+            <!-- Legend identifies grouping -->
+            <legend class="category">Genre:</legend>
+            <span>* fields are required.</span>
+            <ul id="errors"></ul>
+                <ul>
+                    <li id="list">*Pick a Genre:</li>
+                </ul>
+            <!-- Select creates a drop-down list -->
+            <!--<select class="genre" id="genre">
+                <option value="Select Genre">Select Genre</option>
+                <option value="Rock">Rock</option>
+                <option value="Hip Hop">Hip Hop</option>
+                <option value="R&B">R&B</option>
+                <option value="Classical">Classical</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Oldies">Oldies</option>
+                <option value="Alternative">Alternative</option>
+                <option value="Gospel">Gospel</option>
+            </select>-->
+        </fieldset>
+        <fieldset>
+            <legend class="category">Song Info:</legend>
+                <ul>
+                    <li><label for="artist">*Artist:</label><input type="text" id="artist"  placeholder="Lil Wayne" /></li>
+                    <br />
+                    <li><label for="song">*Song:</label><input type="text" id="song"  placeholder="Bedrock" /></li>
+                    <br />
+                   <li>
+                        <select id="format">
+                            <option value="Select Format">Select Format</option>
+                            <option value="MP3">MP3</option>
+                            <option value="iTunes">iTunes</option>
+                            <option value="CD">CD</option>
+                        </select>
+                    </li>
+                </ul>
+        </fieldset>
+        <fieldset>
+            <legend class="category">Additional Information</legend>
+                <ul>
+                    <li><label for="favoriteArtist">Favorite Artist?</label><input type="checkbox" value="No" id="favoriteArtist" /></li>
+                    <li><label for="starRating">Star Rating:</label><input type="range" id="starRating" min="0" max="10" step="1" value="0" /></li>
+                    <li><label for="dateSaved:">Date Saved:</label><input type="date" value="Input Date" id="dateSaved" /></li>
+                    <li><label for="notes">Notes:</label><br /><textarea rows="4" cols="50" id="notes" placeholder="Any additional information can be placed here."></textarea></li>
+                </ul>
+        </fieldset>
+            <br />
+            <!-- Submit Button -->
+            <input type="submit" value="Submit" id="submit" />
+            <br />
+        </form>
+        <script src="main.js" type=text/javascript></script>
+    </body>
+</html>
