@@ -264,5 +264,3 @@ window.addEventListener("DOMContentLoaded", function() {
 
 });
 
-
-// Rick was here.
