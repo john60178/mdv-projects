@@ -88,7 +88,8 @@ window.addEventListener("DOMContentLoaded", function() {
     function getData(){
         toggleControls("on");
         if(localStorage.length === 0) {
-            alert("There is no data in Local Storage.");
+            autoFillData();
+            alert("There is no data in Local Storage so default data was added.");
         }
         // Write Data from Local Storage to the browser.
         var makeDiv = document.createElement('div');
@@ -115,6 +116,37 @@ window.addEventListener("DOMContentLoaded", function() {
                 makeSubList.appendChild(linksLi);
             }
             makeItemLinks(localStorage.key(i), linksLi); // Create our edit and delete buttons/link for each item in local storage.
+        }
+    }
+    
+    // JSON Object which will auto populate local storage.
+    function autoFillData() {
+        var json = {
+            "song1": {
+              "genre": ["Genre:", "Hip Hop"],
+              "artist": ["Artist:", "Eminem"],
+              "song": ["Song:", "Mockingbird"],
+              "format": ["Format:", "iTunes"],
+              "favoriteArtist": ["Favorite Artist:", "Yes"],
+              "starRating": ["Star Rating:", "8"],
+              "dateSaved": ["Date Saved:", "2011-12-10"],
+              "notes": ["Notes:", "This is my favorite song from Eminem."]
+            },
+            "song2": {
+              "genre": ["Genre:", "Rock"],
+              "artist": ["Artist:", "AC/DC"],
+              "song": ["Song:", "Back In Black"],
+              "format": ["Format:", "MP3"],
+              "favoriteArtist": ["Favorite Artist:", "No"],
+              "starRating": ["Star Rating:", "6"],
+              "dateSaved": ["Date Saved:", "2011-10-12"],
+              "notes": ["Notes:", "This is my favorite song from AC/DC."]
+            }
+        };
+        // Store the JSON Object into Local Storage.
+        for(var n in json) {
+            var id                     = Math.floor(Math.random()*100000001);
+            localStorage.setItem(id, JSON.stringify(json[n]));
         }
     }
     
