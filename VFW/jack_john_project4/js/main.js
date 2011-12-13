@@ -1,7 +1,7 @@
 // John Jack
 // Project 4 JavaScript- main.js
 // VFW Term 1111
-// December 9, 2011
+// December 10, 2011
 
 // Wait until the DOM is ready.
 window.addEventListener("DOMContentLoaded", function() {
