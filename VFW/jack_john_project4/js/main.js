@@ -133,7 +133,7 @@ window.addEventListener("DOMContentLoaded", function() {
     function autoFillData() {
         var json = {
             "song1": {
-              "genre": ["Genre:", "Hip Hop"],
+              "genre": ["Genre:", "Hip_Hop"],
               "artist": ["Artist:", "Eminem"],
               "song": ["Song:", "Mockingbird"],
               "format": ["Format:", "iTunes"],
@@ -289,7 +289,7 @@ window.addEventListener("DOMContentLoaded", function() {
     }
     
     // Variable defaults
-    var genreList = ["Select Genre", "Rock", "Hip Hop", "R&B", "Classical", "Jazz", "Oldies", "Alternative", "Gospel"],
+    var genreList = ["Select Genre", "Rock", "Hip_Hop", "R&B", "Classical", "Jazz", "Oldies", "Alternative", "Gospel"],
         //format = ["Select Format", "MP3", "iTunes", "CD"],
         favoriteArtistValue = "Yes",
         errMsg = $('errors');
