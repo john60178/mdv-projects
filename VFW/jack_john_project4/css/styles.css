@@ -18,7 +18,7 @@ h1 {
 }
 
 body {
-    background-color: #F7BFB5;
+    background-color: #EDEDED;
 }
 
 p {
@@ -94,15 +94,21 @@ ul {
 }
 
 #item {
-    background-color: #736AFF;
+    background-color: #74BBFB;
     border: 2px double gold;
     margin: 20px;
     padding: 10px;
 }
 
 div>ul>li {
-    background-color: #736AFF;
+    background-color: #74BBFB;
     border: 2px double gold;
     margin: 20px;
     padding: 10px;
+}
+
+#list {
+    font-family:"Arial", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000080;
 }
