@@ -68,10 +68,8 @@
         <fieldset>
             <legend class="category">Song Info:</legend>
                 <ul>
-                    <li><label for="artist">*Artist:</label><input type="text" id="artist"  placeholder="Lil Wayne" /></li>
-                    <br />
-                    <li><label for="song">*Song:</label><input type="text" id="song"  placeholder="Bedrock" /></li>
-                    <br />
+                    <li id="art"><label for="artist">*Artist:</label><input type="text" id="artist"  placeholder="Lil Wayne" /></li>
+                    <li id="sng"><label for="song">*Song:</label><input type="text" id="song"  placeholder="Bedrock" /></li>
                    <li>
                         <select id="format">
                             <option value="Select Format">Select Format</option>
@@ -91,10 +89,8 @@
                     <li><label for="notes">Notes:</label><br /><textarea rows="4" cols="50" id="notes" placeholder="Any additional information can be placed here."></textarea></li>
                 </ul>
         </fieldset>
-            <br />
             <!-- Submit Button -->
             <input type="submit" value="Submit" id="submit" />
-            <br />
         </form>
         <script src="js/main.js" type=text/javascript></script>
     </body>

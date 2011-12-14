@@ -42,7 +42,6 @@ h2 {
 a {
     color: #0000CD;
     font-family: "Georgia", serif;
-    font-style: bold;
     margin: 20px;
 }
 
@@ -111,4 +110,27 @@ div>ul>li {
     font-family:"Arial", Helvetica, sans-serif;
     font-size: 16px;
     color: #000080;
+}
+
+li#art {
+    margin-bottom: 20px;
+}
+
+li#sng {
+    margin-bottom: 20px;
+}
+
+#submit {
+    margin-top: 10px;
+}
+
+footer>p {
+    color: #000;
+    font-size: 9px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+p#claim {
+    padding-top: 10px;
 }
