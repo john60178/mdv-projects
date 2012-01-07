@@ -87,10 +87,13 @@ window.addEventListener("DOMContentLoaded", function() {
     
     function getData(){
         toggleControls("on");
+         /*
         if(localStorage.length === 0) {
             autoFillData();
-            alert("There is no data in Local Storage so default data was added.");
+            //alert("There is no data in Local Storage so default data was added.");
         }
+      */
+
         // Write Data from Local Storage to the browser.
         var makeDiv = document.createElement('div');
         makeDiv.setAttribute("id", "items");
@@ -127,9 +130,9 @@ window.addEventListener("DOMContentLoaded", function() {
         var newImg = document.createElement('img');
         var setSrc = newImg.setAttribute("src", "images/" + catName + ".png");
         imageLi.appendChild(newImg);
-    }
+    };
     
-    // JSON Object which will auto populate local storage.
+    /* JSON Object which will auto populate local storage.
     function autoFillData() {
         var json = {
             "song1": {
@@ -153,12 +156,14 @@ window.addEventListener("DOMContentLoaded", function() {
               "notes": ["Notes:", "This is my favorite song from AC/DC."]
             }
         };
+
         // Store the JSON Object into Local Storage.
         for(var n in json) {
             var id                     = Math.floor(Math.random()*100000001);
             localStorage.setItem(id, JSON.stringify(json[n]));
         }
     }
+        */
     
     //Make Item Links which creates the edit and delete links for each stored item when displayed.
     function makeItemLinks(key, LinksLi) {
@@ -284,9 +289,9 @@ window.addEventListener("DOMContentLoaded", function() {
         } else {
             // If everything is OK, the data will save. Send the key value (came from editData function).
             // Remember this key value was passed thru the editSubmit event listener as a property.
-            storeData(this.key);
+            sx
         }
-    }
+    };
     
     // Variable defaults
     var genreList = ["Select Genre", "Rock", "Hip_Hop", "R&B", "Classical", "Jazz", "Oldies", "Alternative", "Gospel"],
