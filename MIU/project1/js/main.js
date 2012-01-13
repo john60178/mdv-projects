@@ -294,7 +294,7 @@ window.addEventListener("DOMContentLoaded", function() {
     };
     
     // Variable defaults
-    var genreList = ["Select Genre", "Rock", "Hip_Hop", "R&B", "Classical", "Jazz", "Oldies", "Alternative", "Gospel"],
+    var genreList = ["Select Genre", "Rock", "Hip_Hop", "R_&_B", "Classical", "Jazz", "Oldies", "Alternative", "Gospel"],
         //format = ["Select Format", "MP3", "iTunes", "CD"],
         favoriteArtistValue = "Yes",
         errMsg = $('errors');
