@@ -135,3 +135,7 @@ footer>p {
 p#claim {
     padding-top: 10px;
 }
+
+iframe {
+    margin-left: 20px;
+}
