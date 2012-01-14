@@ -1,0 +1,247 @@
+<!doctype html>  
+<html lang="en">
+<head>
+<!-- John Jack -->
+<!-- Mobile Interface & Usability Term 1201 -->
+<!-- January 12, 2012 -->
+<!-- Project 2 home.html file -->
+
+	<meta charset="utf-8">
+	
+	<title>Mobile Site Template</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page" id="home">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Favorite Playlist</h1>
+		</div>
+		
+		<div data-role="content">
+                	<iframe src="http://widgets.itunes.apple.com/itunes.html?wtype=3&app_id=null&country=us&partnerId=0&affiliate_id=0" frameborder=0 style="overflow-x:hidden;overflow-y:hidden;width:250px;height:300px;border:0px" ></iframe>
+
+			<ul data-role="listview">
+				<li><a href="#music">
+				<h3>Music</h3>
+				<p>Find your favorite songs and add them to your playlist.</p>
+				</a></li>
+				<li><a href="#movies">
+				<h3>Movies</h3>
+				<p>Find your favorite movies or clips and watch them.</p>
+				</a></li>
+				<li><a href="#playlist">
+				<h3>Start Your Playlist</h3>
+				<p>Start saving your playlist with offline viewing capabilities!</p>
+				</a></li>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="music" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Favorite Playlist</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview">
+				<li><a href="http://m.myxer.com">Find MP3 songs</a></li>
+				<li><a href="http://www.livemixtapes.com/main.php">Find Free Mixtapes</a></li>
+				<li><a href="http://m.zedge.net">Find Free songs</a></li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="movies" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Favorite Playlist</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview">
+				<li><a href="http://m.youtube.com">Watch Youtube Movies</a></li>
+				<li><a href="http://www.crackle.com">Watch Crackle Movies</a></li>
+				<li><a href="http://www.hulu.com">Watch Hulu Movies</a></li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="playlist" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Favorite Playlist</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview">
+				<li><a href="additem.html">
+				<h3>Start Your Playlist</h3>
+				<p>If page doesn't load please refresh the page.</p>
+				</a></li>
+                                <li><a href="#vidplaylist">
+				<h3>Start Your Video Playlist</h3>
+				<p>Start saving your video playlist with offline viewing capabilities!</p>
+				</a></li>
+				<li><a href="#aboutus">
+				<h3>About Us</h3>
+				<p>Find out more about Tunez and our company.</p>
+				</a></li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+        
+        <div data-role="page" id="vidplaylist" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Video Playlist</h1>
+		</div>
+		
+		<div data-role="content">
+			<h1>Under Construction</h1>
+                        <p>Were sorry this page is under construction and currently unavailable.</p>
+                        <p>Please check back for more features.</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+        
+        <div data-role="page" id="aboutus" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Company Info</h1>
+		</div>
+		
+		<div data-role="content">
+			<div data-role="collapsible-set">
+                                <div data-role="collapsible" data-collapsed="true">
+                                    <h3>Contact Tunez</h3>
+                                    <p>Here is where the company contact information can be obtained.</p>
+                                    <p><strong>Address:</strong> 2212 Chesapeake Blvd., Norfolk, VA 23320</p>
+                                    <p><strong>Phone:</strong> (757) 236-1185 (Open 8am-5pm EST)</p>
+                                    <p><strong>Email:</strong> tunezplaylist@gmail.com</p>
+                                </div>
+                                <div data-role="collapsible" data-collapsed="true">    
+                                    <h3>Who is Tunez?</h3>
+                                    <p>Find out about the creative drive behind Tunez</p>
+                                    <p>Tunez Favorite Playlist was created as a webapp where you could save all your favorite playlist regardless of the type of media.</p>
+                                    </div>
+                                <div data-role="collapsible" data-collapsed="true">
+                                    <h3>How was Tunez created?</h3>
+                                    <p>Find out more about Tunez and our company.</p>
+                                    <p>Tunez was created in 2012 by Full Sail student John Jack.</p>
+                                    <p>Tell your friends about Tunez and contact us with sugguestion of how you would like to see this webapp improved.</p>
+                                </div>
+                        </div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+        
+	<div data-role="page" id="favorite" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Favorite Music Playlist</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview">
+				<li>Song 1</li>
+				<li>Song 2</li>
+				<li>Song 3</li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star" class="ui-btn-active">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

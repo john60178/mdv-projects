@@ -289,7 +289,7 @@ window.addEventListener("DOMContentLoaded", function() {
         } else {
             // If everything is OK, the data will save. Send the key value (came from editData function).
             // Remember this key value was passed thru the editSubmit event listener as a property.
-            sx
+            
         }
     };
     

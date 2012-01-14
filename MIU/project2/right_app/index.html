@@ -18,45 +18,255 @@
         <meta name="viewport" content="user-scalable=no, width=device-width" />
         <!-- What about the Android?? This allows developers to specify which screen resolution the page has been developed for -->
         <meta name="viewport" content="target-densitydpi=device-dpi" />
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
         <!-- Page Title -->
         <title>Favorite Song List</title>
 	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
 	<link rel="stylesheet" href="css/styles.css">
+	    
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
 		
     </head>
     <body>
         <!-- Top Header of Page-Title -->
-        <h1>Tunez Favorite Song List</h1>
-        
-        <!-- <form method="get" action="http://www.google.com/search">
-
-            <input type="text"   name="q" size="31"
-             maxlength="255" value="" />
-            <input type="submit" value="Web Search" />
-            <input type="radio"  name="sitesearch" value="" />
-             The Web
-            <input type="radio"  name="sitesearch"
-             value="itunes.apple.com/us/artist/" checked /> Search Music<br />
-            
-        </form> -->
-        
-        <iframe src="http://widgets.itunes.apple.com/itunes.html?wtype=3&app_id=null&country=us&partnerId=0&affiliate_id=0" frameborder=0 style="overflow-x:hidden;overflow-y:hidden;width:250px;height:300px;border:0px" ></iframe>
-        
-        <p> This app allows you to save your favorite songs and rate them based on your prefrence. </p>
-        
-        <h2>Build Your Playlist</h2>
-        
-        <a href="additem.html"><img src="images/makeplaylist.png"</a>
-	<a href="http://www.billboard.com"><img src="images/billboardcharts.png"</a>
-	<a href="#"><img src="images/manageplaylist.png"</a>
+	<div data-role="page" id="home">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Favorite Song List</h1>
+		</div>
+		
+		<div data-role="content">
+			<iframe src="http://widgets.itunes.apple.com/itunes.html?wtype=3&app_id=null&country=us&partnerId=0&affiliate_id=0" frameborder=0 style="overflow-x:hidden;overflow-y:hidden;width:250px;height:300px;border:0px" ></iframe>
+			
+			<p> This app allows you to save your favorite songs and rate them based on your prefrence. </p>
+			
+			<h2>Build Your Playlist</h2>
+			
+			<a href="additem.html"><img src="images/makeplaylist.png"</a>
+			<a href="http://www.billboard.com"><img src="images/billboardcharts.png"</a>
+			<a href="#"><img src="images/manageplaylist.png"</a>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-theme="c">
+			<footer id="disclaimer">
+			    <p id="claim">Images used to identify different genres are royalty-free images and have been provided from the following sources:</p>
+			    <p>Saxaphone Image was provided by Simon Howden/ FreeDigitalPhotos.net</p>
+			    <p>Guitar Image was provided by Posterize/ FreeDigitalPhotos.net</p>
+			    <p>Jukebox Image was provided by Phil/ FreeDigitalPhotos.net</p>
+			    <p>Violin Image was provided by Dream Designs/ FreeDigitalPhotos.net</p>
+			    <p>All other images were provided royalty free by http://www.sxc.hu</p>
+			</footer>
+		</div>
+	</div>
+	<!--
+	<div data-role="page" id="home">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Favorite Playlist</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview">
+				<li><a href="#makeplaylist">
+				<h3>Start Your Playlist</h3>
+				<p>Find your favorite songs and add them to your playlist.</p>
+				</a></li>
+				<li><a href="#bbcharts">
+				<h3>Billboard Charts</h3>
+				<p>Check Billboard Charts for up to date top songs.</p>
+				</a></li>
+				<li><a href="#manageplaylist">
+				<h3>Manage Playlist</h3>
+				<p>Manage your playlist.</p>
+				</a></li>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
 	
-	<footer id="disclaimer">
-	    <p id="claim">Images used to identify different genres are royalty-free images and have been provided from the following sources:</p>
-	    <p>Saxaphone Image was provided by Simon Howden/ FreeDigitalPhotos.net</p>
-	    <p>Guitar Image was provided by Posterize/ FreeDigitalPhotos.net</p>
-	    <p>Jukebox Image was provided by Phil/ FreeDigitalPhotos.net</p>
-	    <p>Violin Image was provided by Dream Designs/ FreeDigitalPhotos.net</p>
-	    <p>All other images were provided royalty free by http://www.sxc.hu</p>
-	</footer>
+	<div data-role="page" id="makeplaylist" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Favorite Playlist</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview">
+				<li>Find MP3 songs</li>
+				<li>Find iTunes songs</li>
+				<li>Find Free songs</li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="bbcharts" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Favorite Playlist</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview">
+				<li>Watch Youtube Movies</li>
+				<li>Watch Crackle Movies</li>
+				<li>Watch Hulu Movies</li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="manageplaylist" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Favorite Playlist</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview">
+				<li>Mxyer</li>
+				<li>Zedge</li>
+				<li>Jamster</li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="favorite" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Favorite Music Playlist</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview">
+				<li>Song 1</li>
+				<li>Song 2</li>
+				<li>Song 3</li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star" class="ui-btn-active">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	-->
+	<div data-role="page" id="additem">
+		<!-- Top Header of Page-Title -->
+		<h1>Add A Song</h1>
+		<div id="item">
+		    <nav>
+			<a href="#" id="clear">Clear Storage</a>
+			<a href="#" id="displayLink">Display Data</a>
+			<a href="additem.html" id="addNew" style="display:none;">Add New Song</a>
+		    </nav>
+		</div>
+		<!-- Form Starts Here -->	
+		<form action="#" method="post" id="contactForm">
+		<!-- Fieldset groups elements together -->
+		<fieldset>
+		    <!-- Legend identifies grouping -->
+		    <legend class="category">Genre:</legend>
+		    <span>* fields are required.</span>
+		    <ul id="errors"></ul>
+			<ul>
+			    <li id="list">*Pick a Genre:</li>
+			</ul>
+		    <!-- Select creates a drop-down list -->
+		    <!--<select class="genre" id="genre">
+			<option value="Select Genre">Select Genre</option>
+			<option value="Rock">Rock</option>
+			<option value="Hip Hop">Hip Hop</option>
+			<option value="R&B">R&B</option>
+			<option value="Classical">Classical</option>
+			<option value="Jazz">Jazz</option>
+			<option value="Oldies">Oldies</option>
+			<option value="Alternative">Alternative</option>
+			<option value="Gospel">Gospel</option>
+		    </select>-->
+		</fieldset>
+		<fieldset>
+		    <legend class="category">Song Info:</legend>
+			<ul>
+			    <li id="art"><label for="artist">*Artist:</label><input type="text" id="artist"  placeholder="Lil Wayne" /></li>
+			    <li id="sng"><label for="song">*Song:</label><input type="text" id="song"  placeholder="Bedrock" /></li>
+			   <li>
+				<select id="format">
+				    <option value="Select Format">Select Format</option>
+				    <option value="MP3">MP3</option>
+				    <option value="iTunes">iTunes</option>
+				    <option value="CD">CD</option>
+				</select>
+			    </li>
+			</ul>
+		</fieldset>
+		<fieldset>
+		    <legend class="category">Additional Information</legend>
+			<ul>
+			    <li><label for="favoriteArtist">Favorite Artist?</label><input type="checkbox" value="No" id="favoriteArtist" /></li>
+			    <li><label for="starRating">Star Rating:</label><input type="range" id="starRating" min="0" max="10" step="1" value="0" /></li>
+			    <li><label for="dateSaved:">Date Saved:</label><input type="date" value="Input Date" id="dateSaved" /></li>
+			    <li><label for="notes">Notes:</label><br /><textarea rows="4" cols="50" id="notes" placeholder="Any additional information can be placed here."></textarea></li>
+			</ul>
+		</fieldset>
+		    <!-- Submit Button -->
+		    <input type="submit" value="Submit" id="submit" />
+		</form>
+		
+		<!-- JavaScript under here -->
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</div>
     </body>
 </html>
