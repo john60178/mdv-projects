@@ -1,5 +1,5 @@
 // John Jack
-// Project 3 JavaScript- main.js
+// Project 4 JavaScript- main.js
 // MIU Term 1201
 // January 26, 2012
 

@@ -1,7 +1,7 @@
 // John Jack
 // Project 3 JavaScript- main.js
-// Mobile Interface & Usability Term 1201
-// January 19, 2012
+// MIU Term 1201
+// January 26, 2012
 
 // Wait until the DOM is ready.
 window.addEventListener("DOMContentLoaded", function() {
