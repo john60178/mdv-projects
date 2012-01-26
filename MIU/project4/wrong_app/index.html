@@ -4,7 +4,7 @@
 <!-- John Jack -->
 <!-- Mobile Interface & Usability Term 1201 -->
 <!-- January 26, 2012 -->
-<!-- Project 4 index.html file -->
+<!-- Project 4 wrong_app home.html file -->
 
 	<meta charset="utf-8">
 	
@@ -18,12 +18,11 @@
 	<!-- Mobile IE needs ClearType for smoothing fonts -->
 	<meta http-equiv="cleartype" content="on">
 	
-	<script type="text/javascript" src="js/json.js"></script>
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
 	<link rel="stylesheet" href="css/styles.css" />
 	
-	
+	<script type="text/javascript" src="js/json.js"></script>
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
 
@@ -33,83 +32,124 @@
 	<div data-role="page" id="home">
 		
 		<div data-role="header" data-position="fixed">
-			<h1>Tunez Playlist</h1>
+			<h1>Tunez Favorite Playlist</h1>
 		</div>
 		
 		<div data-role="content">
-                	<img id="logo1"src="images/logo1.png" />
-			     
+                	<iframe src="http://widgets.itunes.apple.com/itunes.html?wtype=3&app_id=null&country=us&partnerId=0&affiliate_id=0" frameborder=0 style="overflow-x:hidden;overflow-y:hidden;width:250px;height:300px;border:0px" ></iframe>
+
 			<ul data-role="listview">
-				<li><a href="#addplaylist">
+				<li><a href="#music">
+				<h3>Music</h3>
+				<p>Find your favorite songs and add them to your playlist.</p>
+				</a></li>
+				<li><a href="#movies">
+				<h3>Movies</h3>
+				<p>Find your favorite movies or clips and watch them.</p>
+				</a></li>
+				<li><a href="#playlist">
 				<h3>Start Your Playlist</h3>
 				<p>Start saving your playlist with offline viewing capabilities!</p>
 				</a></li>
-				<li><a href="#music">
-				<h3>Search 4 Music</h3>
-				<p>Find your favorite songs and add them to your playlist.</p>
-				</a></li>
-				<li><a href="#newsfeed">
-				<h3>Tunez News Feeds</h3>
-				<p>Keep up to date with Tunez.</p>
-				</a></li>
-				<li><a href="#musicgenres">
-				<h3>Genre Icons</h3>
-				<p>Quick refrence gallery of Genre Icons currently being used.</p>
-				</a></li>
 		</div>
 		
-		<div data-role="footer">
-			<a href="#aboutus" data-role="button" data-icon="info" class="ui-btn-right">About Us</a>
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
 		</div>
 		
 	</div>
-		
-	<div data-role="page" id="aboutus" data-add-back-btn="true">
+	
+	<div data-role="page" id="music" data-add-back-btn="true">
 		
 		<div data-role="header" data-position="fixed">
-			<h1>Tunez Company Info</h1>
+			<h1>Tunez Favorite Playlist</h1>
 		</div>
 		
 		<div data-role="content">
-			<div data-role="collapsible-set">
-                                <div data-role="collapsible" data-collapsed="true">
-                                    <h3>Contact Tunez</h3>
-                                    <p>Here is where the company contact information can be obtained.</p>
-                                    <p><strong>Address:</strong> 2212 Chesapeake Blvd., Norfolk, VA 23320</p>
-                                    <p><strong>Phone:</strong> (757) 236-1185 (Open 8am-5pm EST)</p>
-                                    <p><strong>Email:</strong> tunezplaylist@gmail.com</p>
-                                </div>
-                                <div data-role="collapsible" data-collapsed="true">    
-                                    <h3>Who is Tunez?</h3>
-                                    <p>Find out about the creative drive behind Tunez</p>
-                                    <p>Tunez Playlist was created as a webapp where you could save all your favorite playlist regardless of the type of media.</p>
-                                    </div>
-                                <div data-role="collapsible" data-collapsed="true">
-                                    <h3>How was Tunez created?</h3>
-                                    <p>Find out more about Tunez and our company.</p>
-                                    <p>Tunez was created in 2012 by Full Sail student John Jack.</p>
-                                    <p>Tell your friends about Tunez and contact us with sugguestion of how you would like to see this webapp improved.</p>
-                                </div>
-                        </div>
+			<ul data-role="listview">
+				<li><a href="http://m.myxer.com">Find MP3 songs</a></li>
+				<li><a href="http://www.livemixtapes.com/main.php">Find Free Mixtapes</a></li>
+				<li><a href="http://m.zedge.net">Find Free songs</a></li>
+			</ul>
 		</div>
 		
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#music" data-icon="star">Find Music</a></li>
-					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
 					<li><a href="#search" data-icon="search">Search</a></li>
 				</ul>
 			</div>
 		</div>
 		
 	</div>
-        
+	
+	<div data-role="page" id="movies" data-add-back-btn="true">
 		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Favorite Playlist</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview">
+				<li><a href="http://m.youtube.com">Watch Youtube Movies</a></li>
+				<li><a href="http://www.crackle.com">Watch Crackle Movies</a></li>
+				<li><a href="http://www.hulu.com">Watch Hulu Movies</a></li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="playlist" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Favorite Playlist</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview">
+				<li><a href="#addplaylist">
+				<h3>Start Your Playlist</h3>
+				<p>If page doesn't load please refresh the page.</p>
+				</a></li>
+                                <li><a href="#vidplaylist">
+				<h3>Start Your Video Playlist</h3>
+				<p>Start saving your video playlist with offline viewing capabilities!</p>
+				</a></li>
+				<li><a href="#aboutus">
+				<h3>About Us</h3>
+				<p>Find out more about Tunez and our company.</p>
+				</a></li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
 	<div data-role="page" id="addplaylist" data-add-back-btn="true">
 		
 		<div data-role="header" data-position="fixed">
-			<h1>Tunez Playlist</h1>
+			<h1>Tunez Favorite Playlist</h1>
 		</div>
 		
 		<div data-role="content">
@@ -122,7 +162,7 @@
             <span>* fields are required.</span>
             <ul id="errors"></ul>
                 <ul>
-                    <li id="list" class="required">*Pick a Genre:</li>
+                    <li id="list">*Pick a Genre:</li>
                 </ul>
             <!-- Select creates a drop-down list -->
             <!--<select class="genre" id="genre">
@@ -140,8 +180,8 @@
         <fieldset>
             <legend class="category">Song Info:</legend>
                 <ul>
-                    <li id="art"><label for="artist">*Artist:</label><input type="text" id="artist" placeholder="Lil Wayne" class="required" /></li>
-                    <li id="sng"><label for="song">*Song:</label><input type="text" id="song" placeholder="Bedrock" class="required" /></li>
+                    <li id="art"><label for="artist">*Artist:</label><input type="text" id="artist"  placeholder="Lil Wayne" /></li>
+                    <li id="sng"><label for="song">*Song:</label><input type="text" id="song"  placeholder="Bedrock" /></li>
                    <li>
                         <select id="format">
                             <option value="Select Format">Select Format</option>
@@ -155,17 +195,17 @@
         <fieldset>
             <legend class="category">Additional Information</legend>
                 <ul>
-                    <li><label for="favoriteArtist">Favorite Artist?</label><input type="checkbox" value="Yes" checked="checked" id="favoriteArtist" /></li>
-                    <li><label for="starRating">Star Rating:</label><input type="range" id="starRating" min="0" max="10" step="1" value="5" /></li>
-                    <li><label for="dateSaved:">Date Saved:</label><input type="date" value="YYYY-MM-DD" id="dateSaved" /></li>
+                    <li><label for="favoriteArtist">Favorite Artist?</label><input type="checkbox" value="No" id="favoriteArtist" /></li>
+                    <li><label for="starRating">Star Rating:</label><input type="range" id="starRating" min="0" max="10" step="1" value="0" /></li>
+                    <li><label for="dateSaved:">Date Saved:</label><input type="date" value="Input Date" id="dateSaved" /></li>
                     <li><label for="notes">Notes:</label><br /><textarea rows="4" cols="50" id="notes" placeholder="Any additional information can be placed here."></textarea></li>
                 </ul>
         </fieldset>
             <!-- Submit Button -->
 	
 	<fieldset class="ui-grid-a">
-		<div class="ui-block-a"><button type="submit" value="Submit" id="submit" data-theme="b">Submit</button></div>
-		<div class="ui-block-b"><button type="submit" value="Cancel" id="cancel" data-theme="c">Cancel</button></div>	   
+		<div class="ui-block-a"><button type="submit" data-theme="b">Submit</button></div>
+		<div class="ui-block-b"><button type="submit" data-theme="c">Cancel</button></div>	   
 	</fieldset>
 
 
@@ -173,357 +213,20 @@
         </form>
         
 		</div>
-		 
+		
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#" id="clear" data-icon="delete">Delete</a></li>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="#displayLink" id="displayLink" data-icon="star">Favorites</a></li>
-					<li><a href="#" id="addNew" data-icon="gear">Add Song</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
 				</ul>
 			</div>
 		</div>
 		
 	</div>
         
-	<div data-role="page" id="displayLink" data-add-back-btn="true">
-		
-		<div data-role="header" data-position="fixed">
-			<h1>Favorite Music</h1>
-		</div>
-		
-		<div data-role="content">
-			
-		</div>
-		
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#music" data-icon="star">Find Music</a></li>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="#search" data-icon="search">Search</a></li>
-				</ul>
-			</div>
-		</div>
-		
-	
-	<div data-role="page" id="music" data-add-back-btn="true">
-		
-		<div data-role="header" data-position="fixed">
-			<h1>Tunez Music</h1>
-		</div>
-		
-		<div data-role="content">
-			<iframe src="http://widgets.itunes.apple.com/itunes.html?wtype=3&app_id=null&country=us&partnerId=0&affiliate_id=0" frameborder=0 style="overflow-x:hidden;overflow-y:hidden;width:250px;height:300px;border:0px" ></iframe>
-			
-			<ul data-role="listview">
-				<li><a href="http://m.myxer.com">Find MP3 songs</a></li>
-				<li><a href="http://www.livemixtapes.com/main.php">Find Free Mixtapes</a></li>
-				<li><a href="http://m.zedge.net">Find Free songs</a></li>
-			</ul>
-		</div>
-		
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#music" data-icon="star">Find Music</a></li>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="#search" data-icon="search">Search</a></li>
-				</ul>
-			</div>
-		</div>
-		
-	</div>
-	
-	<!--<div data-role="page" id="movies" data-add-back-btn="true">
-		
-		<div data-role="header" data-position="fixed">
-			<h1>Tunez Playlist</h1>
-		</div>
-		
-		<div data-role="content">
-			<ul data-role="listview">
-				<li><a href="http://m.youtube.com">Watch Youtube Movies</a></li>
-				<li><a href="http://www.crackle.com">Watch Crackle Movies</a></li>
-				<li><a href="http://www.hulu.com">Watch Hulu Movies</a></li>
-				<li><a href="http://http://xfinitytv.comcast.net/">Watch Fancast Movies</a></li>
-			</ul>
-		</div>
-		
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#music" data-icon="star">Find Music</a></li>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="#search" data-icon="search">Search</a></li>
-				</ul>
-			</div>
-		</div>
-		
-	</div> -->
-	
-	<div data-role="page" id="musicgenres" data-add-back-btn="true">
-		
-		<div data-role="header" data-position="fixed">
-			<h1>Genre Icons</h1>
-		</div>
-		
-		<div data-role="content">
-			<h4>Here is our Genre Icons Guide</h4>
-			
-                    <div class="ui-grid-b">
-                            <div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/Alternative.png" />Alternative</div></div>
-                            <div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/Classical.png" />Classical</div></div>
-                            <div class="ui-block-c"><div class="ui-bar ui-bar-a"><img src="images/Gospel.png" />Gospel</div></div>
-                            <div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/Hip_Hop.png" />Hip Hop</div></div>
-                            <div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/Jazz.png" />Jazz</div></div>
-                            <div class="ui-block-c"><div class="ui-bar ui-bar-a"><img src="images/Oldies.png" />Oldies</div></div>
-                            <div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/R&B.png" />R&B</div></div>
-                            <div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/Rock.png" />Rock</div></div>
-                    </div><!-- /grid-b -->
-
-			<p id="claim">Images used to identify different genres are royalty-free images and have been provided from the following sources:</p>
-			<p>Saxaphone Image was provided by Simon Howden/ FreeDigitalPhotos.net</p>
-			<p>Guitar Image was provided by Posterize/ FreeDigitalPhotos.net</p>
-			<p>Jukebox Image was provided by Phil/ FreeDigitalPhotos.net</p>
-			<p>Violin Image was provided by Dream Designs/ FreeDigitalPhotos.net</p>
-			<p>All other images were provided royalty free by http://www.sxc.hu</p>
-		</div>
-                        
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#music" data-icon="star">Find Music</a></li>
-					<li><a href="#home" data-icon="gear">Home</a></li>
-					<li><a href="#search" data-icon="search">Search</a></li>
-				</ul>
-			</div>
-		</div>
-		
-	</div>
-	
-	<div data-role="page" id="newsfeed">
-		
-		<div data-role="header" data-position="fixed">
-			<h1>News Feeds</h1>
-		</div>
-		
-		<div data-role="content">
-                	<img id="logo1"src="images/logo1.png" />
-			
-			<!--<div id="newsfeedmtv"
-			<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fwww.mtv.com%2Frss%2Fnews%2Fnews_full.jhtml&chan=y&num=10&date=y&utf=y&html=a"  charset="UTF-8" type="text/javascript"></script>
-
-			<noscript>
-			<a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fwww.mtv.com%2Frss%2Fnews%2Fnews_full.jhtml&chan=y&num=10&date=y&utf=y&html=y">View RSS feed</a>
-			</noscript>-->
-     
-			<ul data-role="listview">
-				<li><a href="#mtvfeed">
-				<h3>MTV News Feed</h3>
-				<p>Catch up to the minute news feeds from MTV!</p>
-				<span class="ui-li-count">10</span>
-				</a></li>
-				<li><a href="#rapfixfeed">
-				<h3>Rapfix News Feed</h3>
-				<p>Get your latest hip-hop news!</p>
-				<span class="ui-li-count">10</span>
-				</a></li>
-				<li><a href="#itunesfeed">
-				<h3>iTunes New Releases News Feed</h3>
-				<p>Find all the new releases from iTunes!</p>
-				<span class="ui-li-count">10</span>
-				</a></li>
-				<li><a href="#billboardfeed">
-				<h3>Billboard News Feed</h3>
-				<p>Find out about all the news from your favorite artists!</p>
-				<span class="ui-li-count">10</span>
-				</a></li>
-				<li><a href="#rapbasementfeed">
-				<h3>Rap Basement News Feed</h3>
-				<p>Find all the new rap and R&B news from Rap Basement!</p>
-				<span class="ui-li-count">10</span>
-				</a></li>
-			</ul>
-				
-		</div>
-		
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#music" data-icon="star">Find Music</a></li>
-					<li><a href="#home" data-icon="gear">Home</a></li>
-					<li><a href="#search" data-icon="search">Search</a></li>
-				</ul>
-			</div>
-		</div>
-		
-	</div>
-	
-	<div data-role="page" id="mtvfeed" data-add-back-btn="true">
-		
-		<div data-role="header" data-position="fixed" data-add-back-btn="true">
-			<h1>MTV News</h1>
-		</div>
-		
-		<div data-role="content">
-			<ul data-role="listview">
-				<li><a href="http://m.mtv.com">
-				<h3>Go to MTV News</h3>
-				<p>
-					<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fwww.mtv.com%2Frss%2Fnews%2Fnews_full.jhtml&chan=y&num=10&date=y&utf=y&html=a"  charset="UTF-8" type="text/javascript"></script>
-		
-					<noscript>
-					<a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fwww.mtv.com%2Frss%2Fnews%2Fnews_full.jhtml&chan=y&num=10&date=y&utf=y&html=y">View RSS feed</a>
-					</noscript>
-				</p>
-			</ul>
-		</div>
-		
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#music" data-icon="star">Find Music</a></li>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="#search" data-icon="search">Search</a></li>
-				</ul>
-			</div>
-		</div>
-		
-	</div>
-		
-	<div data-role="page" id="rapfixfeed" data-add-back-btn="true">
-		
-		<div data-role="header" data-position="fixed" data-add-back-btn="true">
-			<h1>Rapfix News</h1>
-		</div>
-		
-		<div data-role="content">
-			<ul data-role="listview">
-				<li><a href="http://m.mtv.com/blogs/rapfixlist.rbml">
-				<h3>Go to MTV Rapfix News</h3>
-				<p>
-					<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Frapfix.mtv.com%2Ffeed&chan=y&num=10&utf=y"  charset="UTF-8" type="text/javascript"></script>
-
-					<noscript>
-					<a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Frapfix.mtv.com%2Ffeed&chan=y&num=10&utf=y&html=y">View RSS feed</a>
-					</noscript>
-				</p>
-			</ul>
-		</div>
-		
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#music" data-icon="star">Find Music</a></li>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="#search" data-icon="search">Search</a></li>
-				</ul>
-			</div>
-		</div>
-		
-	</div>
-	
-	<div data-role="page" id="itunesfeed" data-add-back-btn="true">
-		
-		<div data-role="header" data-position="fixed" data-add-back-btn="true">
-			<h1>iTunes New Releases</h1>
-		</div>
-		
-		<div data-role="content">
-			<ul data-role="listview">
-				<li><a href="https://www.apple.com/itunes/charts/songs/">
-				<h3>Go to iTunes Store</h3>
-				<p>
-					<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fitunes.apple.com%2FWebObjects%2FMZStore.woa%2Fwpa%2FMRSS%2Fnewsreleases%2Fsf%3D143441%2Flimit%3D10%2Fexplicit%3Dtrue%2Frss.xml&chan=y&num=10&desc=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
-
-					<noscript>
-					<a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fitunes.apple.com%2FWebObjects%2FMZStore.woa%2Fwpa%2FMRSS%2Fnewsreleases%2Fsf%3D143441%2Flimit%3D10%2Fexplicit%3Dtrue%2Frss.xml&chan=y&num=10&desc=1&utf=y&html=y">View RSS feed</a>
-					</noscript>
-
-				</p>
-			</ul>
-		</div>
-		
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#music" data-icon="star">Find Music</a></li>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="#search" data-icon="search">Search</a></li>
-				</ul>
-			</div>
-		</div>
-		
-	</div>
-	
-	<div data-role="page" id="billboardfeed" data-add-back-btn="true">
-		
-		<div data-role="header" data-position="fixed" data-add-back-btn="true">
-			<h1>Billboard News</h1>
-		</div>
-		
-		<div data-role="content">
-			<ul data-role="listview">
-				<li><a href="http://m.billboard.com">
-				<h3>Go to Billboard News</h3>
-				<p>
-					<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fwww.billboard.com%2Frss%2Fthe-feed&chan=y&num=10&desc=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
-
-					<noscript>
-					<a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fwww.billboard.com%2Frss%2Fthe-feed&chan=y&num=10&desc=1&utf=y&html=y">View RSS feed</a>
-					</noscript>
-
-				</p>
-			</ul>
-		</div>
-		
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#music" data-icon="star">Find Music</a></li>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="#search" data-icon="search">Search</a></li>
-				</ul>
-			</div>
-		</div>
-		
-	</div>
-	
-	<div data-role="page" id="rapbasementfeed" data-add-back-btn="true">
-		
-		<div data-role="header" data-position="fixed" data-add-back-btn="true">
-			<h1>Rap Basement News</h1>
-		</div>
-		
-		<div data-role="content">
-			<ul data-role="listview">
-				<li><a href="http://www.rapbasement.com">
-				<h3>Go to Rap Basement</h3>
-				<p>
-					<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Ffeeds.feedburner.com%2Frapbasement%2Frapnews&chan=y&num=10&desc=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
-
-					<noscript>
-					<a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Ffeeds.feedburner.com%2Frapbasement%2Frapnews&chan=y&num=10&desc=1&utf=y&html=y">View RSS feed</a>
-					</noscript>
-				</p>
-			</ul>
-		</div>
-		
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#music" data-icon="star">Find Music</a></li>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="#search" data-icon="search">Search</a></li>
-				</ul>
-			</div>
-		</div>
-		
-	</div>
-	
-	<!--<div data-role="page" id="vidplaylist" data-add-back-btn="true">
+        <div data-role="page" id="vidplaylist" data-add-back-btn="true">
 		
 		<div data-role="header" data-position="fixed">
 			<h1>Tunez Video Playlist</h1>
@@ -538,15 +241,55 @@
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#music" data-icon="star">Find Music</a></li>
-					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
 					<li><a href="#search" data-icon="search">Search</a></li>
 				</ul>
 			</div>
 		</div>
 		
-	</div>-->
+	</div>
         
+        <div data-role="page" id="aboutus" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Tunez Company Info</h1>
+		</div>
+		
+		<div data-role="content">
+			<div data-role="collapsible-set">
+                                <div data-role="collapsible" data-collapsed="true">
+                                    <h3>Contact Tunez</h3>
+                                    <p>Here is where the company contact information can be obtained.</p>
+                                    <p><strong>Address:</strong> 2212 Chesapeake Blvd., Norfolk, VA 23320</p>
+                                    <p><strong>Phone:</strong> (757) 236-1185 (Open 8am-5pm EST)</p>
+                                    <p><strong>Email:</strong> tunezplaylist@gmail.com</p>
+                                </div>
+                                <div data-role="collapsible" data-collapsed="true">    
+                                    <h3>Who is Tunez?</h3>
+                                    <p>Find out about the creative drive behind Tunez</p>
+                                    <p>Tunez Favorite Playlist was created as a webapp where you could save all your favorite playlist regardless of the type of media.</p>
+                                    </div>
+                                <div data-role="collapsible" data-collapsed="true">
+                                    <h3>How was Tunez created?</h3>
+                                    <p>Find out more about Tunez and our company.</p>
+                                    <p>Tunez was created in 2012 by Full Sail student John Jack.</p>
+                                    <p>Tell your friends about Tunez and contact us with sugguestion of how you would like to see this webapp improved.</p>
+                                </div>
+                        </div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
         
         
         <div data-role="page" id="search" data-add-back-btn="true">
@@ -559,7 +302,7 @@
                     <ul data-role="listview" data-filter="true">
                         <div data-role="collapsible-set">
                         <li>
-                            <div data-role="collapsible" data-collapsed="false">
+                            <div data-role="collapsible" data-collapsed="true">
                                     <img src="images/Hip_Hop.png" />
                                     <h4>Hip Hop</h4>
                                     <h4>Artist: Eminem</h4>
@@ -834,12 +577,49 @@
                 <div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#music" data-icon="star">Find Music</a></li>
+					<li><a href="#favorite" data-icon="star" class="ui-btn-active">Favorite</a></li>
 					<li><a href="#home" data-icon="gear">Home</a></li>
 					<li><a href="#search" data-icon="search">Search</a></li>
 				</ul>
 			</div>
 		</div>
+                
+                
+            
+	<div data-role="page" id="favorite" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Favorite Music Playlist</h1>
+		</div>
+		
+		<div data-role="content">
+			
+                    <div class="ui-grid-b" id="favgenres">
+                            <div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/Alternative.png" />Alternative</div></div>
+                            <div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/Classical.png" />Classical</div></div>
+                            <div class="ui-block-c"><div class="ui-bar ui-bar-a"><img src="images/Gospel.png" />Gospel</div></div>
+                            <div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/Hip_Hop.png" />Hip Hop</div></div>
+                            <div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/Jazz.png" />Jazz</div></div>
+                            <div class="ui-block-c"><div class="ui-bar ui-bar-a"><img src="images/Oldies.png" />Oldies</div></div>
+                            <div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/R&B.png" />R&B</div></div>
+                            <div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/Rock.png" />Rock</div></div>
+                    </div><!-- /grid-b -->
+
+
+		</div>
+                        
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star" class="ui-btn-active">Favorite</a></li>
+					<li><a href="#home" data-icon="gear">Home</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
 
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
